@@ -5,7 +5,8 @@ Standards and guidelines for defining standards at Gilt (Oh My!)
 
 ## List of Standards
 
-* [Events Standards](https://github.com/gilt/standards-events)
+* [Events](https://github.com/gilt/standards-events)
+* [Open Source](https://github.com/gilt/standards-open-source)
 
 
 ## Creating a Standard
