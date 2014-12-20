@@ -2,12 +2,10 @@
 
 Standards and guidelines for defining standards at Gilt (Oh My!)
 
-
 ## List of Standards
 
 * [Events](https://github.com/gilt/standards-events)
 * [Open Source](https://github.com/gilt/standards-open-source)
-
 
 ## Creating a Standard
 
@@ -50,4 +48,9 @@ repository structure at Gilt is:
 
 ## Contributing
 
-See https://github.com/gilt/standards/blob/master/CONTRIBUTIONS.md
+[See Contribution Guidelines](blob/master/CONTRIBUTIONS.md)
+
+## Frequently Asked Questions
+
+[See FAQ](blob/master/FAQ.md)
+
