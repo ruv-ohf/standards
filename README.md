@@ -2,6 +2,21 @@
 
 Standards and guidelines for defining standards at Gilt (Oh My!)
 
+When we talk about standards, we are talking about collaboration with
+other teams as well as 3rd parties. From this point of view, our
+standards are (deliberately) very basic requirements, mostly
+influenced by our combined experiences of working with 3rd
+parties. Things that make our lives easier as 'consumers' of 3rd party
+APIs are things we now like to do ourselves for our internal APIs as
+well. Gilt standards are requirements for work at Gilt.
+
+We also highligt suggestions or recommendations; and they are just
+that - you can diverge. We recommend something because we have good
+experiences with it, we intend to support it and it gets the job
+done. That said, if you think you can do better - that's perfectly
+fine, all it means is your team might be on its own and will need to
+support the choice.
+
 ## List of Standards
 
 * [Events](https://github.com/gilt/standards-events)
