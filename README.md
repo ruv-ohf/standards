@@ -54,17 +54,17 @@ repository structure at Gilt is:
 2. Create a team in github named "governance-<standard>" with `write` access
    to the repository (all others having `read`-only access).
 
-3. Create a "CONTRIBUTIONS.md" file in the root of the repository that
+3. Create a "CONTRIBUTING.md" file in the root of the repository that
    describes the policy by which contributions will be accepted. The standard
    Gilt policy is modeled after the docker hub project. Please feel free to
-   link directly to the [standard CONTRIBUTIONS.md
-   policy](https://github.com/gilt/standards/blob/master/CONTRIBUTIONS.md) for
+   link directly to the [standard CONTRIBUTING.md
+   policy](https://github.com/gilt/standards/blob/master/CONTRIBUTING.md) for
    your project.
 
 
 ## Contributing
 
-[See Contribution Guidelines](blob/master/CONTRIBUTIONS.md)
+[See Contribution Guidelines](blob/master/CONTRIBUTING.md)
 
 ## Frequently Asked Questions
 
