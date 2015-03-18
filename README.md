@@ -64,7 +64,7 @@ repository structure at Gilt is:
 
 ## Contributing
 
-[See Contribution Guidelines](blob/master/CONTRIBUTING.md)
+[See Contributing Guidelines](https://github.com/gilt/standards/blob/master/CONTRIBUTING.md)
 
 ## Frequently Asked Questions
 
