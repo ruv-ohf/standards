@@ -1,0 +1,2 @@
+  - [Newrelic](http://newrelic.com/) **Adopt**
+  - [CloudWatch](http://aws.amazon.com/cloudwatch/) **Adopt**

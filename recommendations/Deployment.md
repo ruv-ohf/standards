@@ -1,0 +1,2 @@
+  - [Docker](https://www.docker.com/) **Adopt**
+  - [CodeDeploy](http://aws.amazon.com/codedeploy/) **Adopt**
