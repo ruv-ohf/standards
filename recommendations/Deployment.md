@@ -1,0 +1,4 @@
+  - [CodeDeploy](http://aws.amazon.com/codedeploy/) **Adopt**
+  - [CodePipeline ](http://aws.amazon.com/codepipeline/) **Assess**
+  - [Docker](https://www.docker.com/) **Adopt**
+  - [EC2 Container Service](http://aws.amazon.com/ecs/) **Assess**
