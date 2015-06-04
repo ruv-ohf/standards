@@ -30,7 +30,7 @@ parties. Things that make our lives easier as 'consumers' of 3rd party
 APIs are things we now like to do ourselves for our internal APIs as
 well. Gilt standards are requirements for work at Gilt.
 
-We also highligt suggestions or recommendations; and they are just
+We also highlight suggestions or recommendations; and they are just
 that - you can diverge. We recommend something because we have good
 experiences with it, we intend to support it and it gets the job
 done. That said, if you think you can do better - that's perfectly

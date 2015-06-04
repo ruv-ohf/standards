@@ -1,7 +1,4 @@
 
-  - Objective C
-    - IOS **Adopt**
-
   - Java
     - Android **Adopt**
     - Services **Hold**
@@ -10,6 +7,14 @@
     - Web UI **Adopt**
     - Services **Trial**
 
-  - Scala ([frameworks](frameworks/Scala.md)) **Adopt**
+  - Objective C
+    - IOS **Adopt**
 
   - Ruby **Adopt**
+    - Admin UI **Adopt**
+    - Services **Hold** (please consider Scala alternatives)
+
+  - Scala ([frameworks](frameworks/Scala.md)) **Adopt**
+
+  - Swift
+    - IOS **Adopt**
