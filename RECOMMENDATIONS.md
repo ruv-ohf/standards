@@ -38,4 +38,5 @@ If you feel that something is not listed here but should be - submit a pull requ
 - [Databases](recommendations/Databases.md)
 - [Deployment](recommendations/Deployment.md)
 - [Monitoring](recommendations/Monitoring.md)
+- [Messaging](recommendations/Messaging.md)
 - [OperatingSystems](recommendations/OperatingSystems.md)
