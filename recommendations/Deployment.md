@@ -19,6 +19,7 @@
       - quickly roll over to a different stack, enabling [Blue Green Deploys](http://martinfowler.com/bliki/BlueGreenDeployment.html)
 
   - [Mobile Service Tools](https://github.com/gilt/mobile-service-tools) (Closed Source)
+  - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
 
 ## Hold
 
