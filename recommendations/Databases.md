@@ -17,14 +17,10 @@
 ## Hold
 
   - [MongoDB](https://www.mongodb.org/)
-  
+  - [Voldemort](http://www.project-voldemort.com/voldemort/)
+
     Since our move to AWS we prefer to explore AWS-hosted solutions first to minimize maintenance overhead.
     For well structured data please consider RDS.
     For KV document lookups please consider DynamoDB.
     For caching layer please consider ElastiCache.
-
-  - [Voldemort](http://www.project-voldemort.com/voldemort/)
-    Since our move to AWS we prefer to explore AWS-hosted solutions first to minimize maintenance overhead.
-    For KV document lookups please consider DynamoDB.
-
 
