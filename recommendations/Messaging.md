@@ -8,6 +8,7 @@
 ## Assess
 
   - [Amazon Kinesis](http://aws.amazon.com/kinesis/)
+  - [Amazon SNS](http://aws.amazon.com/sns/)
 
 ## Hold
 
