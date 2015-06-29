@@ -3,7 +3,7 @@
 ## Adopt
 
   - [Amazon SQS](http://aws.amazon.com/sqs/)
-    For worker queues, SQS has proven to be an effective technology and is use in several projects at Gilt.
+    For worker queues, SQS has proven to be an effective technology and is in use in several projects at Gilt.
 
 ## Assess
 
