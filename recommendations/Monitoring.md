@@ -3,11 +3,10 @@
 ## Adopt
 
   - [Newrelic](http://newrelic.com/)
-  
     NewRelic is easy to plug into apps, easy to trigger events to a number of platforms (HipChat, PagerDuty, etc), and provides a ton of functionality.
 
   - [CloudWatch](http://aws.amazon.com/cloudwatch/)
-  
+
 ## Assess
 
   - [Cave](https://github.com/gilt/cave)
