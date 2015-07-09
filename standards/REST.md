@@ -35,10 +35,10 @@ The two largest drivers of REST at Gilt include:
 
 ## apidoc
 
-Gilt sponsors the development of http://www.apidoc.me - an open
-source, free SAAS solution to help developers develop REST
-APIs. apidoc is NOT a standard at Gilt; rather just a tool that some
-teams are finding helpful in building REST APIs.
+We have adopted http://www.apidoc.me (an open source, free SAAS solution)
+to help developers develop REST APIs.
+It focuses on "API first" development and captures many of the lessons
+we've learnt developing REST APIs at Gilt.
 
 We encourage developers to explore the APIs available in apidoc - the
 apidoc schema is designed to make it natural for an API to make
@@ -53,11 +53,11 @@ HTTP and URIs, are supposed to be used. It promises, as Tilkov
 describes, a means of exploiting the Web’s architecture. The main
 principles are as follows:
 
-  - A resource is an identifiable "thing". 
-  - Use standard HTTP methods. 
-  - Link things together. 
+  - A resource is an identifiable "thing".
+  - Use standard HTTP methods.
+  - Link things together.
   - Resources have multiple representations.
-  - Stateless. 
+  - Stateless.
 
 ### A Resource is an Identifiable "Thing"
 
@@ -181,7 +181,7 @@ standard HTTP. No need to reinvent the wheel.
 
   1. GET Requests without a resource identifier should implement
      search and return a paginated list of resources. We suggest using
-     limit and offset for pagination. 
+     limit and offset for pagination.
 
        GET /products?limit=25&offset=0
 
@@ -307,7 +307,7 @@ result, to scale and handle failure more efficiently.
      request [2].
 
 
-### Summary 
+### Summary
 
 In this document we have described the main principles behind REST and
 have outlined a number of guidelines to help develop RESTful APIs. The
@@ -319,9 +319,9 @@ as such - guidelines.
 
 ## Appendix: Examples
 
-Below are examples of REST api requests that follow the above guidelines. 
+Below are examples of REST api requests that follow the above guidelines.
 
-### GET Request - Single Resource 
+### GET Request - Single Resource
 
     GET /products/123 HTTP/1.1
     Host: api.example.com
@@ -335,7 +335,7 @@ Below are examples of REST api requests that follow the above guidelines.
     {
 	"name": "A big bag",
 	"_links": {
-            "self": {"href": "http://api.example.com/products/123"} 
+            "self": {"href": "http://api.example.com/products/123"}
         }
     }
 
@@ -343,7 +343,7 @@ Below are examples of REST api requests that follow the above guidelines.
 
     GET /products/123 HTTP/1.1
     Host: api.example.com
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json
     Content-Length: 1234
@@ -353,11 +353,11 @@ Below are examples of REST api requests that follow the above guidelines.
     Last-Modified: Sat, 27 Apr 2013 00:44:54 GMT
     Expires: Mon, 29 Apr 2013 21:44:55 GMT
     Vary: Accept,Accept-Encoding
-    
+
     {
     	"name": "A big bag",
     	"_links": {
-            "self": {"href": "http://api.example.com/products/123"} 
+            "self": {"href": "http://api.example.com/products/123"}
         }
     }
 
@@ -366,19 +366,19 @@ Below are examples of REST api requests that follow the above guidelines.
     GET /products?offset=20&limit=10 HTTP/1.1
     Host: api.example.com
     Accept: application/json
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json
     Content-Length: 1234
     Link: <http://api.example.com/products?offset=4&limit=10>; rel="prev"
     Link: <http://api.example.com/products?offset=6&limit=10>; rel="next"
-    
+
     [{
     	"name": "Chocolate Biscuit",
         "description": "A big bag of biscuits"
     	"_links": {
-            "self": {"href": "http://api.example.com/products/123"}, 
-            "tag": {"href": "http://api.example.com/tag/chocolate"}, 
+            "self": {"href": "http://api.example.com/products/123"},
+            "tag": {"href": "http://api.example.com/tag/chocolate"},
         }
      },
      {
@@ -386,7 +386,7 @@ Below are examples of REST api requests that follow the above guidelines.
         "description": "A small bag of biscuits"
     	"_links": {
             "self": {"href": "http://api.example.com/products/456"},
-            "tag": {"href": "http://api.example.com/tag/plain"},  
+            "tag": {"href": "http://api.example.com/tag/plain"},
         }
      }
     ]
@@ -398,22 +398,22 @@ Below are examples of REST api requests that follow the above guidelines.
     Content-Type: application/json
     Accept: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Chocolate Biscuit",
         "description": "A big bag of biscuits"
     }
-    
+
     HTTP/1.1 201 Created
     Content-Type: application/json
     Content-Length: 1234
     Location: http://api.example.com/products/123
-    
+
     {
     	"name": "Chocolate Biscuit",
         "description": "A big bag of biscuits"
     	"_links": {
-            "self": {"href": "http://api.example.com/products/123"} 
+            "self": {"href": "http://api.example.com/products/123"}
         }
     }
 
@@ -425,24 +425,24 @@ Below are examples of REST api requests that follow the above guidelines.
     Content-Type: application/json
     Accept: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Chocolate Biscuit",
        "description": "A big bag of biscuits"
     }
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Chocolate Biscuit",
        "description": "A big bag of biscuits"
     	"_links": {
-            "self": {"href": "http://api.example.com/products/123"} 
+            "self": {"href": "http://api.example.com/products/123"}
         }
     }
-    
+
 ### PATCH Request
 
     PATCH /products/123 HTTP/1.1
@@ -450,52 +450,52 @@ Below are examples of REST api requests that follow the above guidelines.
     Content-Type: application/json
     Accept: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Plain Biscuit"
     }
-    
+
     HTTP/1.1 200 OK
     Content-Type: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Plain Biscuit",
     }
-    
-### DELETE Request 
+
+### DELETE Request
 
     DELETE /products/123 HTTP/1.1
     Host: api.example.com
     Accept: application/json
-    
+
     HTTP/1.1 204 No Content
     GET Request - Single Resource - Not Found
     GET /products/123 HTTP/1.1
     Host: api.example.com
     Accept: application/json
-    
+
     HTTP/1.1 404 Not Found
 
-### POST Request - Bad Request. 
+### POST Request - Bad Request.
 
     POST /products HTTP/1.1
     Host: api.example.com
     Content-Type: application/json
     Accept: application/json
     Content-Length: 1234
-    
+
     {
     	"name": "Plain Biscuit"
     }
-    
-    HTTP/1.1 400 Bad Request 
+
+    HTTP/1.1 400 Bad Request
     Content-Type: application/json
     Content-Length: 1234
-    
+
     [{
         "code": "1000",
         "message": "Missing field description"
     }]
 
-    
+
