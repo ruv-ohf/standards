@@ -1,4 +1,6 @@
 # Operating Systems
 
-  - Ubuntu **Adopt**
-  - CentOS **Adopt**
+##Adopt
+
+  - Ubuntu
+  - CentOS
