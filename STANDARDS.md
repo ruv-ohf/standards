@@ -7,13 +7,9 @@ for general discussion.
 
 # List of Standards
 
-
-* [DNS](standards/DNS.md)
 * [AWS](standards/AWS.md)
-* [HTTP(S)](standards/HTTP.md)
-* [REST](standards/REST.md)
-
+* [DNS](standards/DNS.md)
 * [Events](standards/Events.md)
-
+* [HTTP(S)](standards/HTTP.md)
 * [Open Source](standards/OpenSource.md)
-
+* [REST](standards/REST.md)
