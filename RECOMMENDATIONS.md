@@ -20,9 +20,10 @@ Techologies listed here are tagged with one of **Adopt**, **Trial**, **Assess**,
 - **Assess**: Worth exploring with the goal of understanding how it will
   fit at Gilt - does it solve a new problem or improve an existing one?
 
-- **Hold**: Proceed with caution - generally speaking technologies in hold
-  at Gilt have failed in some way and should not be used on new projects.
-
+- **Hold**: Proceed with caution before introducing new reliance on the technology. Something may be on hold for a variety of reasons:
+	- The technology is being explicitly deprecated
+	- The vendor of the technology has issued a replacement (eg., Objective-C vs. Swift)
+	- Previous use of the technology at Gilt has failed in some way	
 
 Depending on your personal attitude and the needs of your project you can either stick to
 a stack of *adopt*ed technologies or experiment. Probably a good idea to reduce our
