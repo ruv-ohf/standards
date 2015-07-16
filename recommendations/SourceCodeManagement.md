@@ -4,5 +4,5 @@
     - GitHub **Adopt**
 
   - Internal projects (private repositories)
-    - GitHub **Assess** (still a matter of debate)
+    - GitHub **Adopt**
     - Gerrit **Adopt**
