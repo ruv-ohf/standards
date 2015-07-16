@@ -33,10 +33,10 @@ If you feel that something is not listed here but should be - submit a pull requ
 
 # List of recommendations
 
-- [ProgrammingLanguages](recommendations/ProgrammingLanguages.md)
-- [SourceCodeManagement](recommendations/SourceCodeManagement.md)
 - [Databases](recommendations/Databases.md)
 - [Deployment](recommendations/Deployment.md)
-- [Monitoring](recommendations/Monitoring.md)
 - [Messaging](recommendations/Messaging.md)
+- [Monitoring](recommendations/Monitoring.md)
 - [OperatingSystems](recommendations/OperatingSystems.md)
+- [Programming Languages](recommendations/ProgrammingLanguages.md)
+- [Source Code Management](recommendations/SourceCodeManagement.md)
