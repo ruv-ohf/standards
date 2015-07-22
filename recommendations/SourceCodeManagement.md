@@ -1,9 +1,7 @@
 # Source Code Management
 
-  - Open Source projects
-    - GitHub **Adopt**
-    - Gerrit **Hold** (not suitable)
+## Adopt
 
-  - Internal projects (private repositories)
-    - GitHub **Assess** (still a matter of debate)
-    - Gerrit **Adopt**
+  - GitHub
+  - Gerrit
+  Gerrit is only suitable for internal projects with private repositories
