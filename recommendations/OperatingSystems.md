@@ -2,5 +2,6 @@
 
 ##Adopt
 
-  - Ubuntu
+  - Amazon Linux
   - CentOS
+  - Ubuntu
