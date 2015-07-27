@@ -1,5 +1,10 @@
 
 # Web
 
-  - [Play](https://www.playframework.com/) **Adopt**
-  - commons-service-core **Hold**
+## Adopt
+
+  - [Play](https://www.playframework.com/)
+
+## Hold
+
+  - commons-service-core
