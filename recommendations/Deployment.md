@@ -24,6 +24,11 @@
 
   - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
 
+  - [AWS Lambda](http://aws.amazon.com/lambda/)
+
+    A nice alternative to deploying/managing service clusters.
+    Consider using in places where functionality is very simple, especially if the traffic is low and it's hard to justify the cost of running EC2 nodes all the time.
+
 ## Hold
 
   - Ioncannon (Closed Source)
