@@ -2,7 +2,19 @@
 
 ## Adopt
 
+  - [CloudFormation](http://aws.amazon.com/cloudformation/)
+    Useful for initial creation of the software stack and pushing occasional subsequent changes.
+    A few examples of resources that can be created with CloudFormation: ELBs,
+    ASGs, instance profiles, IAM profiles, S3 buckets, dynamo db tables.
+    Think of it as creating a network structure into which your code can be deployed.
+
+
   - [CodeDeploy](http://aws.amazon.com/codedeploy/)
+    Useful for deploying application code and any accompanying artifacts, agents, scripts, etc
+    into an existing software stack, perhaps created with CloudFormation.
+    This deals with concepts such as deployment groups, application versions, rollout strategies.
+
+
   - [Docker](https://www.docker.com/)
 
     Docker is largely in use as a replacement for RPMs, to wrap a program in some easily deployable format.
