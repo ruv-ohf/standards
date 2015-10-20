@@ -3,12 +3,16 @@
 ## Adopt
 
   - Job System (Internal System)
-    Legacy job system that can run ruby commands/java jars. Handles scheduling, error notification, 
+    Legacy job system that can run ruby commands/java jars. Handles scheduling, error notification,
 
 ## Assess
 
   - Sundial (Internal System)
     Scheduled workflow engine leveraging ECS to run arbitrary commands in docker containers.
+
+  - Akka (Cluster)
+    Supports cluster singletons without zookeeper, supports cluster sharding.
+    Can be a good fit where you already have Akka cluster running for other reasons.
 
 ## Hold
 
