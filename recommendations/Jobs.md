@@ -2,19 +2,25 @@
 
 ## Adopt
 
-  - Job System (Internal System)
-    Legacy job system that can run ruby commands/java jars. Handles scheduling, error notification,
+ - We do not have a recommendation for Adoption right now; the existing job system is operational but we've moved it to HOLD (see below). We recommend that teams that need new jobs investigate alternative approaches listed in the Assess section. The decision of what job system should be assessed and pursued should be made at a department level.
 
 ## Assess
 
   - Sundial (Internal System)
     Scheduled workflow engine leveraging ECS to run arbitrary commands in docker containers.
 
+  - Amazon Simple Work Flow
+
+  - Time-triggered AWS Lambda Functions
+
   - Akka (Cluster)
     Supports cluster singletons without zookeeper, supports cluster sharding.
     Can be a good fit where you already have Akka cluster running for other reasons.
 
 ## Hold
+
+  - Job System (Internal System)
+    Legacy job system that can run ruby commands/java jars. Handles scheduling, error notification. This system still handles the bulk of Gilt's offline processing for backoffice; however, it is aging and beginning to reveal cracks in terms of out-of-memory errors and jobs not running. We ask engineers to assess other scheduling tools.
 
   - Curling a service on a schedule from cron to trigger tasks
   - Leader elected scheduled tasks on service nodes
