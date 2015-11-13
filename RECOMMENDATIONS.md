@@ -42,3 +42,4 @@ If you feel that something is not listed here but should be - submit a pull requ
 - [OperatingSystems](recommendations/OperatingSystems.md)
 - [Programming Languages](recommendations/ProgrammingLanguages.md)
 - [Source Code Management](recommendations/SourceCodeManagement.md)
+- [Continuous Integration](recommendations/ContinuousIntegration.md)
