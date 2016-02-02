@@ -30,7 +30,7 @@ Gilt iterated over many different approaches to quality assurance over time. The
 
   - UI drivers, e.g. Selenium testing. Can work well in some limited set of use cases where data dependencies are simple and flow is mostly linear, e.g. login/registration. Tend to be really brittle in the scenarios that deal with complex or time-sensitive models.
 
-  - Legacy "stage" environment. While we want to avoid adding more dependencies on it, we have no choice but to continue to use it for legacy systems tightly coupled with gild DB.
+  - Legacy "stage" environment. While we want to avoid adding more dependencies on it, we have no choice but to continue to use it for legacy systems tightly coupled with Gilt DB.
 
 ## Hold
 
