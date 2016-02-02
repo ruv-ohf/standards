@@ -23,7 +23,7 @@ Techologies listed here are tagged with one of **Adopt**, **Trial**, **Assess**,
 - **Hold**: Proceed with caution before introducing new reliance on the technology. Something may be on hold for a variety of reasons:
 	- The technology is being explicitly deprecated
 	- The vendor of the technology has issued a replacement (eg., Objective-C vs. Swift)
-	- Previous use of the technology at Gilt has failed in some way	
+	- Previous use of the technology at Gilt has failed in some way
 
 Depending on your personal attitude and the needs of your project you can either stick to
 a stack of *adopt*ed technologies or experiment. Probably a good idea to reduce our
@@ -41,5 +41,6 @@ If you feel that something is not listed here but should be - submit a pull requ
 - [Monitoring](recommendations/Monitoring.md)
 - [OperatingSystems](recommendations/OperatingSystems.md)
 - [Programming Languages](recommendations/ProgrammingLanguages.md)
+- [QA](recommendations/Quality.md)
 - [Source Code Management](recommendations/SourceCodeManagement.md)
 - [Continuous Integration](recommendations/ContinuousIntegration.md)
