@@ -7,7 +7,7 @@ A nice, in depth, look at microservice testing: [link](http://martinfowler.com/a
 
 ## Adopt
 
-  - Monitoring systems. While they don't prevent defects from going out into production, they catch what "falls through" other testing methods. Should be considered a "must have".
+  - [Monitoring systems](Monitoring.md). While they don't prevent defects from going out into production, they catch what "falls through" other testing methods. Should be considered a "must have".
     In particular, collecting business-specific metrics and alerting on those can be a great way to limit all sorts of damage.
 
   - Canary deploys, see [Test in production](Quality-TIP.md). Should be considered a standard practice for all highly trafficed systems.
@@ -32,8 +32,7 @@ A nice, in depth, look at microservice testing: [link](http://martinfowler.com/a
 
   - UI drivers, e.g. Selenium testing. Can work well in some limited set of use cases where data dependencies are simple and flow is mostly linear, e.g. login/registration. Tend to be really brittle in the scenarios that deal with complex or time-sensitive models.
 
-  - Legacy "stage" environment. While we want to avoid adding more dependencies on it, we have no choice but to continue to use it for legacy systems tightly coupled with Gilt DB.
 
 ## Hold
 
-  - A per-team 'stage' full-stack service environment system has been deprecated. It doesn't scale to 'microservice' architecture. We've considered alternatives, like a formal "pre prod" environment but were never able to pull in enough resources to make that a reality.
+  - Legacy "stage" environment. A per-team 'stage' full-stack service environment system has been deprecated. It doesn't scale to 'microservice' architecture. We've considered alternatives, like a formal "pre prod" environment but were never able to pull in enough resources to make that a reality. While we want to avoid adding more dependencies on it, we have no choice but to continue to use it for legacy systems tightly coupled with Gilt DB.
