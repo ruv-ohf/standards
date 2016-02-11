@@ -14,7 +14,7 @@ A nice, in depth, look at microservice testing: [link](http://martinfowler.com/a
 
   - Strongly typed systems. Type system is the closest thing to the code and, unlike conventional tests that only exercise small sets of parameters, can be used to assert that certain invariants hold true in *all* cases.
 
-  - Separate effectful (state changing, e.g. "writes" to data store, service calls) computations from pure ones ([referentially transparent function calls](http://stackoverflow.com/questions/210835/what-is-referential-transparency)). Pure computations are easy to test with unit tests and easy to reason about in the context of error handling and retry logic.
+  - Separate effectful (state changing, e.g. "writes" to data store, service calls) computations from pure ones (referentially transparent function calls). Pure computations are easy to test with unit tests and easy to reason about in the context of error handling and retry logic.
 
   - Immutable data structures, especially for concurrent / distributed systems. Simplifies reasoning about the code and leads to fewer defects.
 
