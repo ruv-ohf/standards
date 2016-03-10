@@ -22,7 +22,7 @@
 
   - [Docker Registry](https://docs.docker.com/registry/)
 
-    The registry is the place where Docker images are uploaded at build time, and where they are downloaded from at deployment time. For open-source projects, we use [DockerHub](https://hub.docker.com). For private projects, we use one private registry for each AWS sub-account.
+    The registry is the place where Docker images are uploaded at build time, and where they are downloaded from at deployment time. For open-source projects, we use [DockerHub](https://hub.docker.com). For private projects we use [ECR](https://aws.amazon.com/ecr/), it is available in each team's AWS account.
 
 ## Assess
 
