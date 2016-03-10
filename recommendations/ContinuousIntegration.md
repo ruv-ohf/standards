@@ -1,4 +1,4 @@
-# Continous Integration
+# Continuous Integration
 
 Gilt has adopted a number of continuous integration technologies; most notably Jenkins which is used to power legacy deployment, Gerrit and the Daily Load Tests. To facititate a smooth transition, a centralized Jenkins system will continue to be maintained for historical reasons. Engineering teams should NOT add new projects into this centralized repository, but should prefer to adopt per-department CI technologies as appropriate. While there continues to be innovation in the CI space, there is a general consensus that we do not wish to invest or innovate in this area; teams should be free to use whatever tool is most appropriate to their needs.
 
