@@ -31,6 +31,7 @@ A nice, in depth, look at microservice testing: [link](http://martinfowler.com/a
   - Deploy service into a "sandbox" environment and run functional tests. Can be a good approach for services with relatively few dependencies that can, in turn, be sandboxed or mocked. Can be used to test "read only" services but "test in prod" is probably easier.
 
   - UI drivers, e.g. Selenium testing. Can work well in some limited set of use cases where data dependencies are simple and flow is mostly linear, e.g. login/registration. Tend to be really brittle in the scenarios that deal with complex or time-sensitive models.
+  - Generators. Useful to build up more complex testing scenarios by providing a base for constructing a test scenario.
 
 
 ## Hold
