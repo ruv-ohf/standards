@@ -28,11 +28,7 @@
 
   - [CodePipeline ](http://aws.amazon.com/codepipeline/)
   - [EC2 Container Service](http://aws.amazon.com/ecs/)
-  - [Ionroller](https://github.com/gilt/ionroller/)
-
-    Ionroller is an exploration into 'immutable deploys'. It trades off speed of initial deploy (which involves new machines/elbs/etc being created) with the ability to:
-      - test independently in production
-      - quickly roll over to a different stack, enabling [Blue Green Deploys](http://martinfowler.com/bliki/BlueGreenDeployment.html)
+  - [NOVA](https://github.com/gilt/nova)
 
   - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
 
@@ -42,6 +38,12 @@
     Consider using in places where functionality is very simple, especially if the traffic is low and it's hard to justify the cost of running EC2 nodes all the time.
 
 ## Hold
+  - [Ionroller](https://github.com/gilt/ionroller/)
+
+    Ionroller is an exploration into 'immutable deploys'. It trades off speed of initial deploy (which involves new machines/elbs/etc being created) with the ability to:
+      - test independently in production
+      - quickly roll over to a different stack, enabling [Blue Green Deploys](http://martinfowler.com/bliki/BlueGreenDeployment.html)
+
 
   - Ioncannon (Closed Source)
 
