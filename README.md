@@ -50,8 +50,4 @@ here is that you *can* diverge if there's a good reason.
 
 [See Contributing Guidelines](CONTRIBUTING.md)
 
-
-## Governance
-
-Changes to standards need to get [architecture board's approval](https://github.com/gilt/arch-board/blob/master/Structure.md#decision-making-process)
-
+Changes to standards need to get [architecture board's approval](https://github.com/gilt/arch-board/blob/master/README.md#decision-making-process)
