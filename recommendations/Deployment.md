@@ -61,7 +61,7 @@
   - [Play Evolutions](https://www.playframework.com/documentation/2.5.x/Evolutions)
 
     Too tightly couples the deployment of schema with the deployment of code. This can be a problem with
-    difficult rollbacks. It also obfusicates the necessity of avoiding breaking changes to the schema in
+    difficult rollbacks. It also obfuscates the necessity of avoiding breaking changes to the schema in
     order to avoid downtime when the code on a second node is incompatible with the new schema. Though this tool
     may be useful in some small microservices, it is likely that the service will outgrow it and eventually need
     Schema Evolution Manager; recommendation is to simply start with SEM from the beginning.
