@@ -24,6 +24,14 @@
 
     The registry is the place where Docker images are uploaded at build time, and where they are downloaded from at deployment time. For open-source projects, we use [DockerHub](https://hub.docker.com). For private projects we use [ECR](https://aws.amazon.com/ecr/), it is available in each team's AWS account.
 
+  - [Schema Evolution Manager](https://github.com/gilt/schema-evolution-manager)
+
+    Used for deploying Postrgesql schema migrations. Solves the problem of coupling schema changes with
+    code changes by completely separating the two deployments. By necessity, schema migrations must be
+    backwards-compatible (because code deployment happens later), thereby minimizing the risk of schema
+    deployments. Furthermore, it allows different code versions to run on different nodes during code
+    rollout.
+
 ## Assess
 
   - [CodePipeline ](http://aws.amazon.com/codepipeline/)
@@ -49,3 +57,11 @@
 
     The initial premise of Ioncannon, to deploy to a staging environment, run a bunch of functional tests, and promote to production automatically has had some difficulties.
     Particularly, maintaining said stage environment has proven challenging and not particularly efficient. Other methodologies are being explored in tooling above.
+
+  - [Play Evolutions](https://www.playframework.com/documentation/2.5.x/Evolutions)
+
+    Too tightly couples the deployment of schema with the deployment of code. This can be a problem with
+    difficult rollbacks. It also obfusicates the necessity of avoiding breaking changes to the schema in
+    order to avoid downtime when the code on a second node is incompatible with the new schema. Though this tool
+    may be useful in some small microservices, it is likely that the service will outgrow it and eventually need
+    Schema Evolution Manager; recommendation is to simply start with SEM from the beginning.
