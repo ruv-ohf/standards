@@ -10,6 +10,7 @@
     - As a primary data store, **Hold**.
   - [Postgresql](http://www.postgresql.org/) (preference to [RDS](https://aws.amazon.com/rds/))
     - Schema management for postgresql: [Schema evolution manager](https://github.com/gilt/schema-evolution-manager)
+    - See [Deployment.md](Deployment.md) for more commentary on deployment options
   - [SOLR/Lucene](http://lucene.apache.org/solr/)
     - For indexed search, this is our most comfortable platform.
 
