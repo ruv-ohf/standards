@@ -33,7 +33,11 @@ A nice, in depth, look at microservice testing: [link](http://martinfowler.com/a
   - UI drivers, e.g. Selenium testing. Can work well in some limited set of use cases where data dependencies are simple and flow is mostly linear, e.g. login/registration. Tend to be really brittle in the scenarios that deal with complex or time-sensitive models.
   - Generators. Useful to build up more complex testing scenarios by providing a base for constructing a test scenario.
 
+  - Load test individual service nodes (perhaps only selected URL patterns there that matter to the core experience if a service is not 'micro'). Our core services should be horizontally-scalable by design. Having reviewed design, it should be sufficient for us to load test on a small scale (1 to a few nodes, e.g. dark canary) to catch performance regressions. This has the advantages of being a focused (on a single service) test with a clear ownership and not needing a full peak capacity downstream of the service under test.
+
 
 ## Hold
 
   - Legacy "stage" environment. A per-team 'stage' full-stack service environment system has been deprecated. It doesn't scale to 'microservice' architecture. We've considered alternatives, like a formal "pre prod" environment but were never able to pull in enough resources to make that a reality. While we want to avoid adding more dependencies on it, we have no choice but to continue to use it for legacy systems tightly coupled with Gilt DB.
+
+  - Daily "full stack" load tests. In theory it's nice to be hitting the site the way users do and checking that all front end apps/services and their transitive dependencies all work. In practice there are a few problems with this: tests need to be coordinated across all teams or they'll interfere with normal capacity planning and auto scaling activities; ownership is a bit fuzzy (people tend to assume the problem is elsewhere in the stack, not in the code that they own); what do results even mean in the presence of auto-scaling?
