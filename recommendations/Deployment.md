@@ -32,6 +32,10 @@
     deployments. Furthermore, it allows different code versions to run on different nodes during code
     rollout.
 
+  - [Java SE Runtime Environment 8](http://openjdk.java.net/projects/jdk8u/)
+
+    Java 8 is the latest stable release of the Java Platform.  All new deployments of JVM based services should run on JRE 8. Likewise, all JVM based source code (Scala, Java, etc) should be compiled using JDK 8. The only exception should be library code that is used by legacy services that are still on Java 7. Both for compilation and runtime, either OpenJDK or Oracle JDK can be used.
+
 ## Assess
 
   - [CodePipeline ](http://aws.amazon.com/codepipeline/)
@@ -65,3 +69,7 @@
     order to avoid downtime when the code on a second node is incompatible with the new schema. Though this tool
     may be useful in some small microservices, it is likely that the service will outgrow it and eventually need
     Schema Evolution Manager; recommendation is to simply start with SEM from the beginning.
+
+  - Java SE Runtime Environment 7
+
+    Java 7 reached end-of-life in April 2015, and since then there have been no further public security/patch releases. No new codebases and deployments should use Java 7 or older version.
