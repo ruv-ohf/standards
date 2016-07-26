@@ -32,11 +32,16 @@
     deployments. Furthermore, it allows different code versions to run on different nodes during code
     rollout.
 
+##Trial
+
+  - [NOVA](https://github.com/gilt/nova)
+
+    Nova has had increasing levels of adoption throughout the Gilt org and has proven to be a stable and reliable tool for deploying services into AWS.
+
 ## Assess
 
   - [CodePipeline ](http://aws.amazon.com/codepipeline/)
   - [EC2 Container Service](http://aws.amazon.com/ecs/)
-  - [NOVA](https://github.com/gilt/nova)
 
   - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
 
@@ -52,6 +57,9 @@
       - test independently in production
       - quickly roll over to a different stack, enabling [Blue Green Deploys](http://martinfowler.com/bliki/BlueGreenDeployment.html)
 
+  - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
+
+    Active development on sbt-code-deploy has come to a halt, and teams have begun to move their deployments over to Nova.
 
   - Ioncannon (Closed Source)
 
