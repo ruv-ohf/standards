@@ -6,7 +6,7 @@
 
     For worker queues, SQS has proven to be an effective technology and is in use in several projects at Gilt.
 
-## Assess
+## Trial
 
   - [Amazon Kinesis](http://aws.amazon.com/kinesis/)
   
