@@ -36,13 +36,16 @@
 
     Java 8 is the latest stable release of the Java Platform.  All new deployments of JVM based services should run on JRE 8. Likewise, all JVM based source code (Scala, Java, etc) should be compiled using JDK 8. The only exception should be library code that is used by legacy services that are still on Java 7. Both for compilation and runtime, either OpenJDK or Oracle JDK can be used.
 
+##Trial
+
+  - [NOVA](https://github.com/gilt/nova)
+
+    Nova has had increasing levels of adoption throughout the Gilt org and has proven to be a stable and reliable tool for deploying services into AWS.
+
 ## Assess
 
   - [CodePipeline ](http://aws.amazon.com/codepipeline/)
   - [EC2 Container Service](http://aws.amazon.com/ecs/)
-  - [NOVA](https://github.com/gilt/nova)
-
-  - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
 
   - [AWS Lambda](http://aws.amazon.com/lambda/)
 
@@ -56,6 +59,9 @@
       - test independently in production
       - quickly roll over to a different stack, enabling [Blue Green Deploys](http://martinfowler.com/bliki/BlueGreenDeployment.html)
 
+  - [sbt-codedeploy](https://github.com/gilt/sbt-codedeploy)
+
+    Active development on sbt-code-deploy has come to a halt, and teams have begun to move their deployments over to Nova.
 
   - Ioncannon (Closed Source)
 
