@@ -4,10 +4,12 @@
 
  - We do not have a recommendation for Adoption right now; the existing job system is operational but we've moved it to HOLD (see below). We recommend that teams that need new jobs investigate alternative approaches listed in the Assess section. The decision of what job system should be assessed and pursued should be made at a department level.
 
-## Assess
+## Trial
 
-  - Sundial (Internal System)
+  - [Sundial](https://github.com/gilt/sundial)
     Scheduled workflow engine leveraging ECS to run arbitrary commands in docker containers.
+
+## Assess
 
   - Amazon Simple Work Flow
 
