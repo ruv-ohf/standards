@@ -1,0 +1,75 @@
+# Load Testing
+
+This set of recommendations are concerning on how we decide if a given
+service is good enough to handle the expected load that it will face
+(roughly) once deployed in production. Historically this has been a
+much debated topic and we really never settled on something that made
+everyone happy. The current state of the art in GILT is quite brittle
+and turned out to be unmaintainable long term and inadequate in the
+context of a Cloud based infra.
+
+## Adopt
+
+- [Core Service Focused Perfomance Tests]
+
+We think that in an Amazon Cloud scenario a meaningful performance
+test should only try to measure how much load a *single* instance of a
+service can comfortably take enabling its owners to 'do the math' and
+plan a reasonable auto scaling policy for known events (e.g. Noon).
+
+E.g. Assuming we have an elastic enabled svc-foo we could write a
+small, focused performance test able to inject load on a single
+instance of this svc telling us how much could take in the limit of
+acceptable SLAs (e.g. 95th percentile). Having this info and a rough
+estimate of the max load it could take in Production we then are in a
+position where we can confidently write an auto scaling policy with an
+high percentage of success.
+
+This kind of test could be easily automated by writing a simple CI job
+that always tests a canary node in Production making possible to spot
+performance regressions wout stressing the entire cluster.
+
+Making this test an integral part of the service will also promote
+ownership.
+
+## Trial
+
+## Assess
+
+## Hold
+
+- [Site Wide Performance Tests]
+
+The current performance testing framework is based on a series of
+custom built, Gatling based, fat jars deployed on EC2 injector
+machines hitting a given cluster to test its resilience against a
+pre-configured load. The various tests are orchestrated by a set of
+Jenkins jobs kicking off at a predetermined time, each day.
+
+E.g. the '''perf_test_daily_long''' job on production Jenkins has been
+used for a while to test the entire Gilt site end to end. This test
+was trying to simulate many concurrent users browsing the site jumping
+back and forth between account pages, sale listings and product
+details.
+
+The above scenario was reasonable when we were hosting all our
+infrastructure on proprietary hardware hosted in Carpathia but it is
+now proving to be challenging and inadequate after our move to the
+Amazon Cloud.
+
+The main problem with our current performance tests is that they are
+not worth much in a scenario where we use auto scaling groups to react
+to increased load. The net result is a daily test that proves nothing
+and produces a series of small outages due to legacy services still
+not able to scale up/down as required.
+
+An often proposed argument against HOLDing on this kind of tests is
+that we actually need to know if we can scale in face of an unexpected
+given load; we can already give an answer to this question: we
+can't. Given the peculiar shape of the load that the GILT site faces
+every day (much like a big spike around Noon) we can surely say that
+any auto scaling policy purely based only on load/cpu utilization
+won't be fast enough to cope with a very steep load ramp. This is a
+known problem and there already is a proposal for a notification
+system that could be used to schedule asg events for unknown sales
+outside the usual time windows.
