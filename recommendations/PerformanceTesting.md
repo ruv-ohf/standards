@@ -1,16 +1,8 @@
 # Load Testing
 
-This set of recommendations are concerning on how we decide if a given
-service is good enough to handle the expected load that it will face
-(roughly) once deployed in production. Historically this has been a
-much debated topic and we really never settled on something that made
-everyone happy. The current state of the art in GILT is quite brittle
-and turned out to be unmaintainable long term and inadequate in the
-context of a Cloud based infra.
-
 ## Adopt
 
-- [Core Service Focused Perfomance Tests]
+- [Core Service Focused Performance Tests]
 
 We think that in an Amazon Cloud scenario a meaningful performance
 test should only try to measure how much load a *single* instance of a
@@ -27,10 +19,33 @@ high percentage of success.
 
 This kind of test could be easily automated by writing a simple CI job
 that always tests a canary node in Production making possible to spot
-performance regressions wout stressing the entire cluster.
+performance regressions without stressing the entire cluster.
 
 Making this test an integral part of the service will also promote
 ownership.
+
+- [Gatling]
+
+Writing an effective performance test able to verify that the most
+critical paths of your service are well prepared to handle a given
+load is not that difficult when using the right tools.
+
+One performance test framework we have based our load testing upon
+since the beginning is [Gatling](http://gatling.io/). We like its
+expressive Scala based DSL to layout simulations and its ease of
+use. It also offers a comprehensive reporting to quickly pinpoint
+performance regressions.
+
+A significant
+[example]((https://gist.github.com/umatrangolo/3cd6a16c322ece72a58831a10ea9bbfa.js))
+of a core service that is tested with the help of this tool is
+svc-user. The simulation code is very small but it is able to test the
+top four most used endpoints in the service. We offer a gist of it
+showing that what it takes to write a meaningful test with Gatling is
+no more than 100 lines of code. After building a fat jar out of it, it
+is then possible to run on the spot a test for quickly validating a
+new version (you could even run it from your laptop) or automate it in
+a proper CI pipeline (e.g. last step after deploying a canary).
 
 ## Trial
 
