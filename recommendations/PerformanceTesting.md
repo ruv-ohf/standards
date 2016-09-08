@@ -37,7 +37,7 @@ use. It also offers a comprehensive reporting to quickly pinpoint
 performance regressions.
 
 A significant
-[example]((https://gist.github.com/umatrangolo/3cd6a16c322ece72a58831a10ea9bbfa.js))
+[example](https://gist.github.com/umatrangolo/3cd6a16c322ece72a58831a10ea9bbfa)
 of a core service that is tested with the help of this tool is
 svc-user. The simulation code is very small but it is able to test the
 top four most used endpoints in the service. We offer a gist of it
