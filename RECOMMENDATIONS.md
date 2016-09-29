@@ -44,3 +44,4 @@ If you feel that something is not listed here but should be - submit a pull requ
 - [QA](recommendations/Quality.md)
 - [Source Code Management](recommendations/SourceCodeManagement.md)
 - [Continuous Integration](recommendations/ContinuousIntegration.md)
+- [Performance Testing](recommendations/PerformanceTesting.md)
