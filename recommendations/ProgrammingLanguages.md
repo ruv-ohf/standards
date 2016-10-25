@@ -22,3 +22,11 @@
 
   - Swift
     - iOS **Adopt**
+
+  - Golang **Trial**
+      We feel that, despite its 80s-ish look and feel, we could
+      benefit from its very low cpu/memory footprint, "batteries
+      included" philosophy and fast development turn-around to write
+      simple services not requiring the full power of Types and FP and
+      for CPU intensive tasks. Is it worth notice that it really
+      shines combined with an ECS+Docker deploy.
