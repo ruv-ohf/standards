@@ -23,7 +23,7 @@
   - Swift
     - iOS **Adopt**
 
-  - Golang **Trial**
+  - Golang **Asses**
       We feel that, despite its 80s-ish look and feel, we could
       benefit from its very low cpu/memory footprint, "batteries
       included" philosophy and fast development turn-around to write
