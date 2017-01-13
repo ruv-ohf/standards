@@ -1,7 +1,11 @@
 
 # Web
 
-## Asses
+## Adopt
+
+  - [Play](https://www.playframework.com/)
+
+## Assess
 
   - [Akka HTTP](http://doc.akka.io/docs/akka/2.4.11/scala/http/)
     We think that for writing lean microservices without a web
@@ -9,10 +13,6 @@
     (mostly not needed) bagagge that Play brings. Its integration with
     Akka Stream and Akka Actors makes it the perfect fit for writing
     reactive, high-concurrent and resilient services.
-
-## Adopt
-
-  - [Play](https://www.playframework.com/)
 
 ## Hold
 
