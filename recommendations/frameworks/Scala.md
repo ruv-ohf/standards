@@ -38,7 +38,7 @@
       are naturally incentivized to experiment with new things (new
       frameworks, new programming languages, etc.) eventually throwing
       away things if they don't turn out to be worth the effort. We
-      found that introducing a 'Common' library hampers innovation and
+      found that introducing a 'Common' library deters innovation and
       discourage people to try new things; it imposes some
       technological choices right from the start. E.g: you know that
       you need to work with Scala (and not the latest version) or that
