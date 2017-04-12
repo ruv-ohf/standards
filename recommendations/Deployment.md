@@ -36,7 +36,7 @@
 
     Java 8 is the latest stable release of the Java Platform.  All new deployments of JVM based services should run on JRE 8. Likewise, all JVM based source code (Scala, Java, etc) should be compiled using JDK 8. The only exception should be library code that is used by legacy services that are still on Java 7. Both for compilation and runtime, either OpenJDK or Oracle JDK can be used.
 
-##Trial
+## Trial
 
   - [NOVA](https://github.com/gilt/nova)
 
