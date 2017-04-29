@@ -18,8 +18,8 @@ From [wikipedia](https://en.wikipedia.org/wiki/Technical_standard):
 Our expectation is that we will all follow the standards. If we find
 that a standard is not useful or has become an obstacle; we change the
 standard. The emphasis on defining standards is to really be careful,
-recommending the basic standards we need at gilt to be productive
-without being prescriptive about details that actually don't improve
+recommending the basic standards we need to be productive without 
+being prescriptive about details that actually don't improve
 cross team collaboration.
 
 When we talk about standards, we are talking about collaboration with
@@ -28,7 +28,7 @@ standards are (deliberately) very basic requirements, mostly
 influenced by our combined experiences of working with 3rd
 parties. Things that make our lives easier as 'consumers' of 3rd party
 APIs are things we now like to do ourselves for our internal APIs as
-well. Gilt standards are requirements for work at Gilt.
+well.
 
 We also highlight suggestions or recommendations; and they are just
 that - you can diverge. We recommend something because we have good
@@ -49,5 +49,3 @@ here is that you *can* diverge if there's a good reason.
 ## Creating/changing a Standard
 
 [See Contributing Guidelines](CONTRIBUTING.md)
-
-Changes to standards need to get [architecture board's approval](https://github.com/gilt/arch-board/blob/master/README.md#decision-making-process)
