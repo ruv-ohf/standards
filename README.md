@@ -1,3 +1,5 @@
+> Forkað sem grunnur að stöðlum / reglum sem við getum aðlagað að okkur og svo tamið.
+
 # Standards/recommendations.
 
 * [STANDARDS](STANDARDS.md)
